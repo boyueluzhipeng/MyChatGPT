@@ -1,0 +1,12 @@
+paho-mqtt
+pyyaml
+pyserial
+loguru
+tabulate
+pymysql
+sqlalchemy
+oss2
+imagezmq
+simplejpeg
+pexpect
+aiortsp
