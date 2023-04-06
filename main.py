@@ -1,6 +1,5 @@
 from Dxr_Chat.ChatGPT import Chatbot
 import os, subprocess
-api_key = os.environ.get('OPENAI_API_KEY')
 from Dxr_voice.dxr_tts import text_to_speech_sync
 
 def say(text):
@@ -21,7 +20,7 @@ def main():
     is_voice = input("是否开启录音模式？(y/n): ")
     # 让用户输入是否开启语音播报模式
     is_say = input("是否开启语音播报模式？(y/n): ")
-    bot = Chatbot(api_key)
+    bot = Chatbot(os.environ.get('OPENAI_API_KEY'))
     while True:
         if is_voice == 'y':
             # 如果开启录音模式，就录制音频
